@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_state_info_text_size">32sp</dimen>
+    <dimen name="main_margin">8dp</dimen>
+    <dimen name="stat_icon_size">50dp</dimen>
+    <dimen name="ability_icon_size">100dp</dimen>
+    <dimen name="score_tip_text_size">16sp</dimen>
+    <dimen name="start_button_size">100dp</dimen>
+    <dimen name="icon_button_size">75dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="app_name_text_size">48sp</dimen>
+    <dimen name="launcher_tip_text_size">32sp</dimen>
+    <dimen name="score_text_size">48sp</dimen>
+    <dimen name="button_hint_text_size">24sp</dimen>
+    <dimen name="small_icon_size">30dp</dimen>
+</resources>

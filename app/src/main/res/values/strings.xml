@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Are you lucky?</string>
+    <string name="start">Start new game</string>
+    <string name="plus_one">+1</string>
+    <string name="try_again">Try again</string>
+    <string name="score_tip">Tap anywhere to continue</string>
+    <string name="score">Score: %1$d</string>
+    <string name="launcher_tip">Play the game to find out!</string>
+    <string name="open_cell_ability_name">Open random cell</string>
+    <string name="restore_heart_ability_name">Restore a heart</string>
+    <string name="ability_cost">Cost: %1$d</string>
+    <string name="resume_last_game">Resume last game</string>
+    <string name="are_you_lucky">Are you lucky?</string>
+</resources>

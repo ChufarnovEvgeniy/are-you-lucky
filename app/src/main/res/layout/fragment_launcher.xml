@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/app_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:text="@string/are_you_lucky"
+        android:textColor="@color/main_yellow"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:text="@string/launcher_tip"
+        android:textColor="@color/main_blue"
+        android:textSize="@dimen/launcher_tip_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name_text_view" />
+
+    <ImageView
+        android:id="@+id/start_new_image_view"
+        android:layout_width="@dimen/start_button_size"
+        android:layout_height="@dimen/start_button_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_image"
+        app:tint="@color/main_blue" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="@id/start_new_image_view"
+        app:layout_constraintEnd_toEndOf="@id/start_new_image_view"
+        app:layout_constraintStart_toStartOf="@id/start_new_image_view"
+        app:layout_constraintTop_toTopOf="@id/start_new_image_view"
+        app:srcCompat="@drawable/key_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textSize="@dimen/button_hint_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_new_image_view" />
+
+    <TextView
+        android:id="@+id/resume_game_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resume_last_game"
+        android:textAlignment="center"
+        android:textColor="@color/main_blue"
+        android:textSize="@dimen/launcher_tip_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_new_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

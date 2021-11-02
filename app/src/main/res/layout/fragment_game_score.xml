@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="@dimen/score_text_size"
+        app:layout_constraintBottom_toTopOf="@id/try_again_image_view"
+        app:layout_constraintEnd_toStartOf="@id/key_icon_image_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Score: 8" />
+
+    <ImageView
+        android:id="@+id/key_icon_image_view"
+        android:layout_width="@dimen/stat_icon_size"
+        android:layout_height="@dimen/stat_icon_size"
+        app:layout_constraintBottom_toBottomOf="@id/score_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/score_text_view"
+        app:layout_constraintTop_toTopOf="@id/score_text_view"
+        app:srcCompat="@drawable/key_image" />
+
+    <ImageView
+        android:id="@+id/try_again_image_view"
+        android:layout_width="@dimen/start_button_size"
+        android:layout_height="@dimen/start_button_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_text_view"
+        app:srcCompat="@drawable/circle_image"
+        app:tint="@color/main_blue" />
+
+    <ImageView
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="@id/try_again_image_view"
+        app:layout_constraintEnd_toEndOf="@id/try_again_image_view"
+        app:layout_constraintStart_toStartOf="@id/try_again_image_view"
+        app:layout_constraintTop_toTopOf="@id/try_again_image_view"
+        app:srcCompat="@drawable/loop_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:textSize="@dimen/button_hint_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/try_again_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
